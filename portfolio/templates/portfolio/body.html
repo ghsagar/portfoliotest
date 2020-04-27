@@ -1,0 +1,72 @@
+{% extends 'portfolio/base.html' %}
+
+{% block top%}
+<h1>hello</h1>
+
+<div class="container-fluid">
+    <h1>hello</h1>
+    {% for images in main %}
+
+    <img src="{{images.topimage.url}}" alt="" >
+    {% endfor %}
+    {% endblock%}
+</div>
+ 
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-lg-3">
+            <div class="card">
+                <img src="{{first.image.url}} " class="card-img-top img-fluid" />
+                 
+                <div class="card-block">
+                    <h2 class="card-title"> This is Diamond</h2>
+                    <p> {{first.desc}}</p>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="card"> 
+                <div class="card-block">
+                    <h2 class="card-title"> This is Diamond</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam expedita dolore fugit enim itaque, amet eum illum ex minus quisquam </p>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="card">
+               
+                <div class="card-block">
+                    <h2 class="card-title"> This is Diamond</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam expedita dolore fugit enim itaque, amet eum illum ex minus quisquam </p>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="card"> 
+                <div class="card-block">
+                    <h2 class="card-title"> This is Diamond</h2>
+                    <p>{{first.desc}}</p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+ 
+  
+{% endblock %}
+

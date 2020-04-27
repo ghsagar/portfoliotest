@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hvrbox .hvrbox-layer_rotate {
+            border-radius: 50%;
+            -moz-transform: rotateZ(0);
+            -webkit-transform: rotateZ(0);
+            -ms-transform: rotateZ(0);
+            transform: rotateZ(0);
+        }
+        .hvrbox:hover .hvrbox-layer_rotate,
+        .hvrbox.active .hvrbox-layer_rotate {
+            border-radius: 0%;
+            -moz-transform: rotateZ(360deg);
+            -webkit-transform: rotateZ(360deg);
+            -ms-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+        }
+        
+    </style>
+</head>
+<body>
+    
+
+    <div class="hvrbox">
+        <img src= "https://media-cdn.tripadvisor.com/media/photo-s/12/f0/c7/19/photo1jpg.jpg"/>  
+        <div class="hvrbox-layer_top hvrbox-layer_rotate">
+            <div class="hvrbox-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
+        </div>
+    </div>
+</body>
+</html>

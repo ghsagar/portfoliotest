@@ -1,0 +1,80 @@
+ {%extends 'portfolio/base.html' %}
+  
+
+
+
+ {% block card %}
+ {% load static%}
+ <div class="container">
+     <div class="row ">
+         <div class="col-md-6 mx-auto">
+
+        {% for object in main %}
+
+        <img src="{{object.topimage.url}}"  class="img-fluid  " alt="" style="height:540px">
+    
+        {% endfor %}
+         </div>
+         
+         
+        
+
+     </div>
+    
+
+ </div>
+
+ <div class="p-3 mb-2 bg-success text-white my-5 text-center container">
+    <h1 class="py-2 "> Some of My Projects</h1>
+ </div>
+
+ 
+  
+        
+     
+
+
+
+ <div class="container " >
+
+    <div class="row" >
+        {% for object in objects %}
+        <div class="col-md-6 col-sm-12 col-lg-6">
+          
+            <div class="card my-5">
+                
+
+                <img src="{{object.image.url}} " class="card-img-top img-fluid" style="height: auto; width: 100%;" >
+                 
+                <div class="card-block">
+                    <h2 class="card-title text-center bg-success text-white ">  {{object.name}}  </h2>
+                   <!--<p> {{object.desc}}</p>-->
+                </div>
+                <!--<div class="card-block my-2">
+                     
+                    <p> {{object.desc}}</p>
+                </div>-->
+                
+                
+
+              
+
+            </div> 
+           
+
+        </div>
+        {% endfor %}
+
+        
+         
+    </div>
+
+</div>
+
+<div class="p-3 mb-2 bg-success text-white my-5 text-center container">
+    <h1 class="py-1 ">  </h1>
+ </div>
+ 
+  
+
+ {%endblock%}
